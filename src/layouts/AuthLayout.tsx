@@ -8,16 +8,13 @@ const AuthLayout: React.FC = () => {
         <>
             <SidebarProvider
                 defaultOpen={true}
-                style={
-                    {
-                        "--sidebar-width": "calc(var(--spacing) * 72)",
-                    } as React.CSSProperties
-                }
             >
-                <AppSidebar variant="inset" />
+                <AppSidebar />
                 <SidebarInset>
                     <SiteHeader />
-                    <div className="flex flex-1 flex-col"><Outlet /></div>
+                    <main>
+                        <Outlet />
+                    </main>
                 </SidebarInset>
             </SidebarProvider>
         </>
