@@ -4,10 +4,10 @@ import AuthLayout from "../layouts/AuthLayout";
 import NotFound from "../components/auth/NotFound";
 import ForgotPassword from "../components/auth/ForgotPassword";
 import Login from "../components/auth/Login";
-import Dashboard from "../pages/Dashboard";
 import MyAccount from "../pages/my-profile/MyAccount";
 import ProtectedRoute from "./ProtectedRoute";
 import GlobalErrorBoundary from "../components/error/GlobalErrorBoundary";
+import DashboardPage from "@/pages/dashboard/page";
 
 export const router = createBrowserRouter([
     {
@@ -31,13 +31,13 @@ export const router = createBrowserRouter([
         children: [
             {
                 path: "/",
-                element: <MainLayout />,
+                element: <AuthLayout />,
                 children: [
                     {
                         index: true, element: <Navigate to="/dashboard" replace />
                     },
                     {
-                        path: 'dashboard', element: <Dashboard />,
+                        path: 'dashboard', element: <DashboardPage />,
                     },
                     {
                         path: 'profile/my-account', element: <MyAccount />,
