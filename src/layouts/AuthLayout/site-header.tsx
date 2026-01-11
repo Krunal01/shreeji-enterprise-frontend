@@ -1,8 +1,8 @@
 import { Button } from "@/components/ui/button"
 import { Separator } from "@/components/ui/separator"
 import { SidebarTrigger } from "@/components/ui/sidebar"
-import { ModeToggle } from "@/pages/dashboard/components/mode-toggle"
-import { ThemeSelector } from "@/pages/dashboard/components/theme-selector"
+// import { ModeToggle } from "@/pages/dashboard/components/mode-toggle"
+// import { ThemeSelector } from "@/pages/dashboard/components/theme-selector"
 
 export function SiteHeader() {
   return (

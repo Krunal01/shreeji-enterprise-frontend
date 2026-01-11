@@ -3,8 +3,8 @@ import {
   SidebarInset,
   SidebarProvider,
 } from "@/components/ui/sidebar"
-import { AppSidebar } from "@/pages/dashboard/components/app-sidebar"
-import { SiteHeader } from "@/pages/dashboard/components/site-header"
+import { AppSidebar } from "@/layouts/AuthLayout/app-sidebar"
+import { SiteHeader } from "@/layouts/AuthLayout/site-header"
 
 // import "@/app/(examples)/dashboard/theme.css"
 
