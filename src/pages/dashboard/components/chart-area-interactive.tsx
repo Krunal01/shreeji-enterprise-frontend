@@ -174,7 +174,7 @@ export function ChartAreaInteractive() {
           </span>
           <span className="@[540px]/card:hidden">Last 3 months</span>
         </CardDescription>
-        <Button>
+        <Button size="sm" variant="ghost" className="ml-auto p-0">
           <ToggleGroup
             type="single"
             value={timeRange}

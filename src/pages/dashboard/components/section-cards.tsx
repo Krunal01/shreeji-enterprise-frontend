@@ -12,14 +12,14 @@ import { Button } from "@/components/ui/button"
 
 export function SectionCards() {
   return (
-    <div className="*:data-[slot=card]:from-primary/5 *:data-[slot=card]:to-card dark:*:data-[slot=card]:bg-card grid grid-cols-1 gap-4 px-4 *:data-[slot=card]:bg-gradient-to-t *:data-[slot=card]:shadow-xs lg:px-6 @xl/main:grid-cols-2 @5xl/main:grid-cols-4">
+    <div className="grid grid-cols-2 gap-4 px-4 *:data-[slot=card]:bg-gradient-to-t *:data-[slot=card]:shadow-xs lg:px-6 @xl/main:grid-cols-2 @5xl/main:grid-cols-4">
       <Card className="@container/card">
         <CardHeader>
           <CardDescription>Total Revenue</CardDescription>
           <CardTitle className="text-2xl font-semibold tabular-nums @[250px]/card:text-3xl">
             $1,250.00
           </CardTitle>
-          <Button>
+          <Button variant="secondary">
             <Badge variant="outline">
               <IconTrendingUp />
               +12.5%
@@ -41,7 +41,7 @@ export function SectionCards() {
           <CardTitle className="text-2xl font-semibold tabular-nums @[250px]/card:text-3xl">
             1,234
           </CardTitle>
-          <Button>
+          <Button variant="secondary">
             <Badge variant="outline">
               <IconTrendingDown />
               -20%
@@ -63,7 +63,7 @@ export function SectionCards() {
           <CardTitle className="text-2xl font-semibold tabular-nums @[250px]/card:text-3xl">
             45,678
           </CardTitle>
-          <Button>
+          <Button variant="secondary">
             <Badge variant="outline">
               <IconTrendingUp />
               +12.5%
@@ -83,7 +83,7 @@ export function SectionCards() {
           <CardTitle className="text-2xl font-semibold tabular-nums @[250px]/card:text-3xl">
             4.5%
           </CardTitle>
-          <Button>
+          <Button variant="secondary">
             <Badge variant="outline">
               <IconTrendingUp />
               +4.5%
